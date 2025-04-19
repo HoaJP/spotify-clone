@@ -20,7 +20,7 @@ const DisplayAlbum = () => {
           <h4>{albumData.desc}</h4>
           <p className="mt-1">
             <img
-              className="inline-block w-5"
+              className="inline-block w-5 mx-1"
               src={assets.spotify_logo}
               alt=""
             />
@@ -31,7 +31,7 @@ const DisplayAlbum = () => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-3 sm: grid-cols-4 mt-10 mb-4 pl-2 text-[#a7a7a7]">
+      <div className="grid grid-cols-3 sm:grid-cols-4 mt-10 mb-4 pl-2 text-[#a7a7a7]">
         <p>
           <b className="mr-4">#</b>Title
         </p>
@@ -41,10 +41,10 @@ const DisplayAlbum = () => {
       </div>
       <hr />
       {songsData.map((item, index) => (
-        <div className="grid grid-cols-3 sm: grid-cols-4 gap-2 items-center text-[#a7a7a7] hover:bg-[#ffffff26]">
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-2 items-center text-[#a7a7a7] hover:bg-[#ffffff26]">
           <p className="text-white p-1">
             <b className="mr-4 text-[#a7a7a7]">{index + 1}</b>
-            <img className="inline w-10 mr-5" src={item.image} alt="" />
+            <img className="inline w-10 mr-3" src={item.image} alt="" />
             {item.name}
           </p>
           <p className="text-[15px]">{albumData.name}</p>
